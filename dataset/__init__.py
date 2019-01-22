@@ -14,7 +14,7 @@ __all__ = ['Database', 'Table', 'freeze', 'connect']
 __version__ = '1.1.0'
 
 
-def connect(url=None, schema=None, reflect_metadata=True, engine_kwargs=None,
+def connect(url=None, schema=None, reflect_metadata=True, engine_kwargs={'check_same_thread':False},
             reflect_views=True, ensure_schema=True, row_type=row_type):
     """ Opens a new connection to a database.
 
